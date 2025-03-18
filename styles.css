@@ -69,21 +69,51 @@ header a:hover {
     background: #fff;
 }
 
-.main h2 {
+.section {
+    position: relative;
+    padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.section-content {
+    background: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#about {
+    background-image: url('‪D:\xiangce21\1.png'); /* 替换为你的背景图片 */
+}
+
+#education {
+    background-image: url('D:\xiangce21\2.png'); /* 替换为你的背景图片 */
+}
+
+#awards {
+    background-image: url('awards-bg.jpg'); /* 替换为你的背景图片 */
+}
+
+#contact {
+    background-image: url('contact-bg.jpg'); /* 替换为你的背景图片 */
+}
+
+.section h2 {
     margin-bottom: 20px;
 }
 
-.main p {
+.section p {
     margin-bottom: 10px;
 }
 
-.main ul {
+.section ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.main ul li {
+.section ul li {
     margin-bottom: 10px;
 }
 
