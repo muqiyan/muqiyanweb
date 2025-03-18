@@ -78,21 +78,21 @@ header a:hover {
 }
 
 .section-content {
-    background: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    background: rgba(228, 5, 5, 0.504); /* 半透明黑色背景 */
     padding: 20px;
     border-radius: 8px;
 }
 
 #about {
-    background-image: url('‪D:\xiangce21\1.png'); /* 替换为你的背景图片 */
+    background-image: url('D:\Desktop\3.17晚课作业\images\1.png'); /* 替换为你的背景图片 */
 }
 
 #education {
-    background-image: url('D:\xiangce21\2.png'); /* 替换为你的背景图片 */
+    background-image: url('D:\Desktop\3.17晚课作业\images\2.png'); /* 替换为你的背景图片 */
 }
 
 #awards {
-    background-image: url('awards-bg.jpg'); /* 替换为你的背景图片 */
+    background-image: url('D:\Desktop\3.17晚课作业\images\3.png'); /* 替换为你的背景图片 */
 }
 
 #contact {
