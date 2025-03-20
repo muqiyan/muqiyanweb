@@ -5,56 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人简历</title>
     <link rel="stylesheet" href="/muqiyanweb/styles.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>个人简历</h1>
-        </header>
-        
-        <div class="profile">
-            <div class="photo-container">
-                <img src="your-photo.jpg" alt="个人照片" id="profile-photo">
+    <div class="resume-container">
+        <!-- 简历封面 -->
+        <section class="resume-section cover-page">
+            <div class="profile-photo-container">
+                <img src="your-photo.jpg" alt="个人照片" class="profile-photo">
             </div>
-            <div class="info">
-                <h2>个人信息</h2>
-                <p><strong>姓名：</strong><span id="name">慕淇燕</span></p>
-                <p><strong>联系方式：</strong><span id="contact">电话: 18083598326| 邮箱: 1413710638@qq.com</span></p>
+            <h1 class="name">慕淇燕</h1>
+            <p class="title">在读硕士研究生</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> 1413710638@qq.com</p>
+                <p><i class="fas fa-phone"></i> 180-8359-8326</p>
+                <p><i class="fas fa-map-marker-alt"></i> 湖北武汉</p>
             </div>
-        </div>
-        
-        <div class="resume-content">
-            <section>
-                <h3>教育背景</h3>
-                <div class="education">
-                    <h4>华中农业大学</h4>
-                    <p>生态学 | 硕士 |牛马 </p>
+            <div class="social-links">
+                <a href="https://github.com/muqiyan" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+        <!-- 个人信息 -->
+        <section class="resume-section personal-info">
+            <h2 class="section-title">个人信息</h2>
+            <div class="section-content">
+                <p>我是一名牛马研究生，热爱生活，积极向上。</p>
+            </div>
+        </section>
+
+        <!-- 教育背景 -->
+        <section class="resume-section education">
+            <h2 class="section-title">教育背景</h2>
+            <div class="section-content">
+                <div class="education-item">
+                    <h3>三峡大学-生态学学士</h3>
+                    <p class="education-time">2020年9月 - 2024年7月</p>
                 </div>
-            </section>
-            
-            <section>
-                <h3>获奖经历</h3>
-                <div class="experience">
-                    <h4>华中农业大学资源与环境学院优秀营员</h4>
-                    <h4>“校园十佳创业团队”</h4>
-                    <h4>全国大学生生命科学竞赛科学探究类省三等奖</h4>
-                    <h4>校三等奖学</h4>
-                    <h4>校“三好学生”</h4>
-                  
+                <div class="education-item">
+                    <h3>华中农业大学-生态学硕士</h3>
+                    <p class="education-time">2024年9月 - 至今</p>
+                    <p class="education-description">研究生期间参与多个科研项目，研究方向为环境生态。</p>
                 </div>
-            </section>
-            
-            <section>
-                <h3>技能</h3>
-                <ul class="skills">
-                    <li>CET-6</li>
-                    <li>红十字急救证</li>
-                    <li>驾驶证</li>
-                </ul>
-            </section>
+            </div>
+        </section>
+
+        <!-- 获奖经历 -->
+        <section class="resume-section awards">
+            <h2 class="section-title">获奖经历</h2>
+            <div class="section-content">
+                <div class="award-item">
+                    <h3>华中农业大学资源与环境学院优秀营员</h3>
+                </div>
+                <div class="award-item">
+                    <h3>三峡大学校园十佳创业团队</h3>
+                </div>
+                <div class="award-item">
+                    <h3>三峡大学校三等奖、校三好学生</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技能证书 -->
+        <section class="resume-section skills">
+            <h2 class="section-title">技能证书</h2>
+            <div class="section-content">
+                <div class="skill-category">
+                    <h3>CET-6</h3>
+                </div>
+                <div class="skill-category">
+                    <h3>红十字急救证</h3>
+                </div>
+                <div class="skill-category">
+                    <h3>驾驶证</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- 翻页按钮 -->
+        <div class="page-navigation">
+            <button id="prev-btn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="page-indicator">
+                <span id="current-page">1</span>/<span id="total-pages">5</span>
+            </div>
+            <button id="next-btn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
         </div>
     </div>
-    
+
     <script src="/muqiyanweb/script.js"></script>
 </body>
 </html>

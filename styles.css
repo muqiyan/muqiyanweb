@@ -1,3 +1,4 @@
+/* 基础样式重置 */
 * {
     margin: 0;
     padding: 0;
@@ -5,96 +6,249 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+    background-color: #f5f9ff;
     color: #333;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    color: #2c3e50;
-}
-
-.profile {
+    line-height: 1.6;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
     padding: 20px;
 }
 
-.photo-container {
-    margin-right: 30px;
+/* 简历容器样式 */
+.resume-container {
+    max-width: 700px;
+    width: 100%;
+    height: 80vh;
+    perspective: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-#profile-photo {
-    width: 150px;
-    height: 150px;
+/* 简历页面基本样式 */
+.resume-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: #fff;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-out;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    overflow-y: auto;
+}
+
+.resume-section.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* 封面页样式 */
+.cover-page {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-photo-container {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border: 3px solid #2c3e50;
 }
 
-.info {
-    flex: 1;
-}
-
-.info h2 {
-    margin-bottom: 15px;
-    color: #2c3e50;
-}
-
-.resume-content {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 25px;
-}
-
-section h3 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-}
-
-.education, .experience {
-    margin-bottom: 15px;
-}
-
-.education h4, .experience h4 {
-    color: #3498db;
-    margin-bottom: 5px;
-}
-
-.skills {
-    list-style: none;
-}
-
-.skills li {
-    background-color: #e1f5fe;
-    padding: 8px 15px;
+.name {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #0066cc;
     margin-bottom: 8px;
-    border-radius: 4px;
-    display: inline-block;
-    margin-right: 8px;
-    color: #2c3e50;
+}
+
+.title {
+    font-size: 16px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-links a {
+    color: #0066cc;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* 各模块通用样式 */
+.section-title {
+    font-size: 20px;
+    color: #0066cc;
+    margin-bottom: 15px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #b3e5fc;
+}
+
+.section-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+}
+
+/* 个人信息模块样式 */
+.personal-info {
+    background-color: #e6f7ff;
+}
+
+/* 教育背景模块样式 */
+.education {
+    background-color: #f0f8ff;
+}
+
+.education-item {
+    padding: 12px 0;
+    border-bottom: 1px dashed #b3d4fc;
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-item h3 {
+    font-size: 16px;
+    color: #0066cc;
+    margin-bottom: 4px;
+}
+
+.education-time {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+.education-description {
+    font-size: 13px;
+    color: #555;
+}
+
+/* 获奖经历模块样式 */
+.awards {
+    background-color: #e8f4ff;
+}
+
+.award-item {
+    padding: 12px 0;
+    border-bottom: 1px dashed #b3d4fc;
+}
+
+.award-item:last-child {
+    border-bottom: none;
+}
+
+.award-item h3 {
+    font-size: 16px;
+    color: #0066cc;
+    margin-bottom: 4px;
+}
+
+.award-time {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+/* 技能证书模块样式 */
+.skills {
+    background-color: #f5f9ff;
+}
+
+.skill-category {
+    margin-bottom: 15px;
+}
+
+.skill-category h3 {
+    font-size: 16px;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.skill-category ul {
+    padding-left: 15px;
+}
+
+.skill-category li {
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+/* 翻页导航样式 */
+.page-navigation {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-btn {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn:hover {
+    background-color: #0055aa;
+    transform: scale(1.1);
+}
+
+.page-indicator {
+    font-size: 14px;
+    color: #555;
 }
