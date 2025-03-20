@@ -1,128 +1,100 @@
-/* 基础样式 */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
     background-color: #f4f4f4;
-    color: #88f680;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* 头部样式 */
 header {
-    background: #333;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #555 3px solid;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header #branding {
-    float: left;
-}
-
-header #branding h1 {
-    margin: 0;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-header .highlight, header .current a {
-    color: #e8491d;
-    font-weight: bold;
-}
-
-header a:hover {
-    color: #ffffff;
-    font-weight: bold;
-}
-
-/* 主内容区域 */
-.main {
-    padding: 20px;
-    background: #fff;
-}
-
-.section {
-    position: relative;
-    padding: 50px 20px;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-}
-
-.section-content {
-    background: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
-    padding: 20px;
-    border-radius: 8px;
-}
-
-#about {
-    background-image: url('\muqiyanweb\images\1.png'); /* 替换为你的背景图片 */
-}
-
-#education {
-    background-image: url('\muqiyanweb\images\2.png'); /* 替换为你的背景图片 */
-}
-
-#awards {
-    background-image: url('\muqiyanweb\images\3.png'); /* 替换为你的背景图片 */
-}
-
-#contact {
-    background-image: url('\muqiyanweb\images\1.png'); /* 替换为你的背景图片 */
-}
-.section h2 {
-    margin-bottom: 20px;
-}
-
-.section p {
-    margin-bottom: 10px;
-}
-
-.section ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.section ul li {
-    margin-bottom: 10px;
-}
-
-/* 页脚样式 */
-footer {
-    background: #6eeea1;
-    color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.photo-container {
+    margin-right: 30px;
+}
+
+#profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2c3e50;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.resume-content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.education, .experience {
+    margin-bottom: 15px;
+}
+
+.education h4, .experience h4 {
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.skills {
+    list-style: none;
+}
+
+.skills li {
+    background-color: #e1f5fe;
+    padding: 8px 15px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 8px;
+    color: #2c3e50;
 }

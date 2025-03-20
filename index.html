@@ -1,78 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>慕淇燕的个人网站</title>
+    <title>个人简历</title>
     <link rel="stylesheet" href="/muqiyanweb/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>慕淇燕的个人网站</h1>
+    <div class="container">
+        <header>
+            <h1>个人简历</h1>
+        </header>
+        
+        <div class="profile">
+            <div class="photo-container">
+                <img src="your-photo.jpg" alt="个人照片" id="profile-photo">
             </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="#about">关于我</a></li>
-                    <li><a href="#education">教育经历</a></li>
-                    <li><a href="#awards">获奖情况</a></li>
-                    <li><a href="#contact">联系我</a></li>
-                </ul>
-            </nav>
+            <div class="info">
+                <h2>个人信息</h2>
+                <p><strong>姓名：</strong><span id="name">慕淇燕</span></p>
+                <p><strong>联系方式：</strong><span id="contact">电话: 18083598326| 邮箱: 1413710638@qq.com</span></p>
+            </div>
         </div>
-    </header>
-
-    <div class="main">
-        <section id="about" class="section">
-            <div class="section-content">
-                <h2>关于我</h2>
-                <p>我叫慕淇燕，来自贵州，是一名生态学专业的研究生，希望自己永远乐观向上，积极且勇敢。</p>
-            </div>
-        </section>
-
-        <section id="education" class="section">
-            <div class="section-content">
-                <h2>教育经历</h2>
-                <ul>
-                    <li>本科：三峡大学</li>
-                    <li>硕士：华中农业大学</li>
+        
+        <div class="resume-content">
+            <section>
+                <h3>教育背景</h3>
+                <div class="education">
+                    <h4>华中农业大学</h4>
+                    <p>生态学 | 硕士 |牛马 </p>
+                </div>
+            </section>
+            
+            <section>
+                <h3>获奖经历</h3>
+                <div class="experience">
+                    <h4>华中农业大学资源与环境学院优秀营员</h4>
+                    <h4>“校园十佳创业团队”</h4>
+                    <h4>全国大学生生命科学竞赛科学探究类省三等奖</h4>
+                    <h4>校三等奖学</h4>
+                    <h4>校“三好学生”</h4>
+                  
+                </div>
+            </section>
+            
+            <section>
+                <h3>技能</h3>
+                <ul class="skills">
+                    <li>CET-6</li>
+                    <li>红十字急救证</li>
+                    <li>驾驶证</li>
                 </ul>
-            </div>
-        </section>
-
-        <section id="awards" class="section">
-            <div class="section-content">
-                <h2>获奖情况</h2>
-                <ul>
-                    <li>华中农业大学资源与环境学院优秀营员</li>
-                    <li>“校园十佳创业团队”</li>
-                    <li>全国大学生生命科学竞赛科学探究类省三等奖</li>
-                    <li>国家励志奖学金</li>
-                    <li>“互联网+”大学生创新创业大赛省级铜奖</li>
-                    <li>校三等奖学</li>
-                    <li>支教获 “优秀志愿者”和 “优秀支教老师”</li>
-                    <li>校“三好学生”</li>
-                    <li>校园征文大赛校级一等奖</li>
-                    <li>校园舞蹈团体赛校级一等奖</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="section-content">
-                <h2>联系我</h2>
-                <p>地址：华中农业大学</p>
-                <p>邮箱：<a href="mailto:1413710638@qq.com">1413710638@qq.com</a></p>
-                <p>电话：18083598326</p>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
-
-    <footer>
-        <p>感谢你的访问！</p>
-    </footer>
-
+    
     <script src="/muqiyanweb/script.js"></script>
 </body>
 </html>
